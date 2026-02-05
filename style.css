@@ -1,0 +1,88 @@
+/* Poori body ka sytle */
+body {
+    font-family: 'Seoge UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login box ka design */
+.login-container {
+    background-color: rgb(53, 247, 5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(7, 7, 7, 0.911);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #0a0a0ae7;
+    margin-bottom: 20px;
+}
+
+/* INPUT FIELDS KA DESIGN */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #0a0a0aef;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    /* PADDING KO WIDTH ME INCLUDE KAREGA */
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+#togglePassword:hover {
+    color: #000;
+}
+
+/* BUTTON KA DESIGN */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3700ffa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ERROR OR SUCCESS MESSAGE */
+#message {
+    margin-top: 15px;
+    font-size: 18px;
+}
