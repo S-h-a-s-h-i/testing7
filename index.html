@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purana Sathi | Home</title>
+  <link rel="stylesheet" href="style4.css">
+  <!-- <link rel="stylesheet" href="profile.css"> -->
+</head>
+
+<body class="index-bg">
+
+  <!-- CHANGES HUYE HAI -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      document.getElementById("findFriendHero").onclick = function () {
+        window.location.href = "find-friend.html";
+      };
+
+      document.getElementById("addStudentHero").onclick = function () {
+        window.location.href = "add-student.html";
+      };
+
+    });
+  </script>
+
+  <header>
+    <div class="logo">Purana Sathi</div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="find-friend.html">Find Friend</a>
+      <a href="add-student.html">Add Student</a>
+      <a href="profile.html">Profile</a>
+      <a href="about-us.html">About us</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1 class="animate-text">Welcome to <br><span>Purana Sathi</span></h1>
+        <p>
+          Your personalized activity hub to reconnect with long-lost friends,
+          manage student records, and stay updated with your network.
+        </p>
+        <div class="hero-buttons">
+          <button id="findFriendHero" class="cta-btn">Find Friend</button>
+          <button id="addStudentHero" class="cta-btn secondary-cta">Add Student</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="features-section">
+      <div class="feature-card">
+        <h3>Find Friend</h3>
+        <p>Reconnect with schoolmates and relatives using our smart discovery algorithm.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Add Student</h3>
+        <p>Expand your social circle and manage student records effectively.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure & Private</h3>
+        <p>We prioritize data privacy with robust security protocols.</p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="script4.js"></script>
+  <script src="profile.js"></script>
+
+</body>
+
+
+</html>
