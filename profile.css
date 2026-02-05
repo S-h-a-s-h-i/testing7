@@ -1,0 +1,130 @@
+/* Profile Page Specific Styles */
+
+/* Remove default padding from body if it was set in profile.css 
+   style4.css handles the main body look */
+
+.profile-container {
+    width: 90%;
+    max-width: 450px;
+    margin: 80px auto;
+    background: var(--card-bg, rgba(255, 255, 255, 0.95));
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-container h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profile-image {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color, #50e3c2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.profile-row:last-of-type {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: #777;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.value {
+    color: #222;
+    font-weight: 600;
+    font-size: 1.1rem;
+    word-break: break-all;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 2rem;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+}
+
+.logout-btn:hover {
+    background: #ff6b81;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 71, 87, 0.5);
+}
+
+.logout-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Ensure header links inherit style4.css correctly without interference */
+header nav a.active {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 2rem 1.5rem;
+        margin: 40px auto;
+        width: 95%;
+    }
+
+    .profile-container h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+
+    .value {
+        font-size: 1rem;
+    }
+
+    .logout-btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
