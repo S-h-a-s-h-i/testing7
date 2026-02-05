@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body class="index-bg">
+
+  <header>
+    <div class="logo">Purana Sathi</div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="find-friend.html">Find Friend</a>
+      <a href="add-student.html">Add Student</a>
+      <a href="profile.html">Profile</a>
+      <a href="about-us.html">About us</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+  </header>
+
+  <div class="main-content" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+    <div class="login-container">
+      <h2> Login </h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email"> <b>Email or Mobile Number</b></label>
+          <input type="text" id="email" placeholder="Apna email daalein" required>
+        </div>
+        <div class="input-group">
+          <label for="password"> <b>Password/OTP</b> </label>
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Password daalein" required>
+            <i class="fas fa-eye" id="togglePassword"></i>
+          </div>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <p id="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="script4.js"></script>
+
+</body>
+
+</html>
